@@ -214,6 +214,13 @@
                 </Info>
             </File>
         </File>
+        <File Location="WorkshopGuide.pdf">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="artifact"/>
+                </Category>
+            </Info>
+        </File>
     </Files>
     <Info Location="ProjectData">
         <Info Name="Generating-Tests-for-Your-MATLAB-Code-Workshop"/>
