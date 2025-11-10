@@ -14,8 +14,8 @@ classdef testSimpleSort < matlab.unittest.TestCase
     methods (Test)
 
         function testSimpleSort_ExampleBasedTest(testCase)
-            % This is a classic test using defined inputs and expected
-            % outputs
+            % This is an example-based test using a hardcoded input and
+            % expected output
 
             % Define inputs
             in = [3,5,2,8,1,2,6];
@@ -33,8 +33,8 @@ classdef testSimpleSort < matlab.unittest.TestCase
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Below is a property-based test that is missing the logic to %
-        % test the properties of of the result. Uncomment and update  %
-        %                  the code to make it pass.                  %
+        % test the properties of the result. Uncomment and update the %
+        % local functions at the bottom of the class to make it pass. %                    %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
         % function testSimpleSort_PropertyBasedTest(testCase, inputValue)
@@ -56,22 +56,15 @@ classdef testSimpleSort < matlab.unittest.TestCase
         % 
         % 
         %     % Exercise function
-        %     output = simpleSort(inputValue);
+        %     result = simpleSort(inputValue);
         % 
         % 
-        %     % Compute and verify properties of the result. Be sure to check
-        %     % for existing testCase.verify* qualifications that can help
-        %     % make this easier. You can explore available qualifications
-        %     % using testCase.verify<TAB>.
-        %     % e.g., testCase.verifyTrue( all(output > 0) )
+        %     % Check each property of the result
+        %     isSortedAscending = checkIsSortedAscending(result);
+        %     hasSameNumberOfElements = checkHasSameNumberOfElements(result,inputValue);
         % 
         % 
-        %     % Perform logic to check each property of the result
-        %     isSortedAscending = checkIsSortedAscending(output);
-        %     hasSameNumberOfElements = checkHasSameNumberOfElements(inputValue,output);
-        % 
-        % 
-        %     % Verify properties of result are satisfied
+        %     % Verify properties of actualOutput are satisfied
         %     testCase.verifyTrue(isSortedAscending);
         %     testCase.verifyTrue(hasSameNumberOfElements);
         % end
@@ -79,19 +72,19 @@ classdef testSimpleSort < matlab.unittest.TestCase
     end
 end
 
-function isSortedAscending = checkIsSortedAscending(output)
-% HOMEWORK: Add logic to check that the output is sorted in ascending order
-%           Note: The output should be a logical true/false
+function isSortedAscending = checkIsSortedAscending(result)
+% HOMEWORK: Add code to check if result is sorted in ascending order
+%           Note: isSortedAscending should be a logical true/false
 
 % ADD CODE HERE
 
 
 end
 
-function hasSameNumberOfElements = checkHasSameNumberOfElements(inputValue,output)
-% HOMEWORK: Add logic to check that the output has the same number of
-%           elements as the input
-%           Note: The output should be a logical true/false
+function hasSameNumberOfElements = checkHasSameNumberOfElements(result,inputValue)
+% HOMEWORK: Add logic to check if result has the same number of elements 
+%           as inputValue
+%           Note: hasSameNumberOfElements should be a logical true/false
 
 % ADD CODE HERE
 

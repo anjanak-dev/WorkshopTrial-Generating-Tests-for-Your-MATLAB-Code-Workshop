@@ -98,20 +98,6 @@
             <DIR_SIGNIFIER Location="1">
                 <Info/>
             </DIR_SIGNIFIER>
-            <File Location="enableAdvancedCodeCoverage.m">
-                <Info>
-                    <Category UUID="FileClassCategory">
-                        <Label UUID="design"/>
-                    </Category>
-                </Info>
-            </File>
-            <File Location="openCodeQualityDashboard.m">
-                <Info>
-                    <Category UUID="FileClassCategory">
-                        <Label UUID="design"/>
-                    </Category>
-                </Info>
-            </File>
             <File Location="updateReadmeLinks.m">
                 <Info>
                     <Category UUID="FileClassCategory">
