@@ -40,15 +40,15 @@ classdef testSimpleSort < matlab.unittest.TestCase
         % function testSimpleSort_PropertyBasedTest(testCase, inputValue)
         %     % Create a property-based test for simpleSort
         % 
-        %     % Instead of testing specific input and output values like we
-        %     % did above, property-based testing checks that the
-        %     % "properties" (i.e., the defining characteristics) of the
-        %     % result are satisfied.
-        % 
-        %     % A major benefit of property-based testing is that you don't
-        %     % don't need to define any specific expected values. We
-        %     % expect that the properties of the solution are true, so the
-        %     % exact values are less important (or not important at all).
+        %     % Another way to test a code is by identifying "properties"
+        %     % (i.e., characteristics) of the results it produces that stay
+        %     % the same no matter what the input is. Once these properties
+        %     % are identified, you can write tests that check these
+        %     % properties against many different test inputs. Being able to
+        %     % run tests against many different inputs (even randomly
+        %     % generated inputs) can sometimes help you discover bugs and
+        %     % edge cases that you might have missed with a smaller sample
+        %     % of test inputs.
         % 
         %     % For simpleSort, the properties of the algorithm are:
         %     %   - Output is sorted in ascending order
