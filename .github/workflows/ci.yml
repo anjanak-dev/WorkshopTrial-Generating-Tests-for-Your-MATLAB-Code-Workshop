@@ -13,7 +13,6 @@ on:
   workflow_dispatch:
 
 env:
-  MLM_LICENSE_TOKEN: ${{secrets.MLM_LICENSE_TOKEN}}
   PRODUCT_LIST: MATLAB MATLAB_Test
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -51,6 +50,7 @@ jobs:
         uses: matlab-actions/setup-matlab@v2
         with:
           products: ${{ env.PRODUCT_LIST }}
+          cache: true
 
       # Run the MATLAB build tool to build and test your code
       - name: Run buildtool
